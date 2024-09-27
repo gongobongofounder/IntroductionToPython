@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Kode+Mono:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Bungee+Tint&family=Kode+Mono:wght@400..700&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #1d1e1e;
+    gap: 10px;
+}
+
+.title {
+    font-size: 40px;
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: sticky;
+    /* Make the title sticky */
+    top: 0;
+    /* Sets the top position when sticky */
+    background-color: rgb(45, 44, 44);
+    /* Background color */
+    width: 100%;
+    /* Full width */
+    text-align: center;
+    /* Center text */
+    z-index: 1000;
+    /* Ensure it appears above other content */
+    height: 69px;
+    /* Fixed height */
+    padding-top: 7px;
+    /* Padding on top */
+    animation: glow 1.5s infinite alternate;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+
+    /* Adjust as needed for your breakpoint */
+    .title {
+        font-size: 28px;
+        /* Smaller font size for mobile */
+        height: 50px;
+        /* Adjust height for mobile */
+        padding-top: 5px;
+        /* Adjust padding for mobile */
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+
+.title p:hover {
+    animation: zoom-in 0.5s ease-in-out;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+        /* Start and end at original position */
+    }
+
+    40% {
+        transform: translateY(-30px);
+        /* Move up */
+    }
+
+    60% {
+        transform: translateY(-15px);
+        /* Move down */
+    }
+}
+
+@keyframes zoom-in {
+    0% {
+        transform: scale(0.8);
+        /* Start slightly smaller */
+        opacity: 0;
+        /* Start fully transparent */
+    }
+
+    100% {
+        transform: scale(1);
+        /* End at original size */
+        opacity: 1;
+        /* End fully opaque */
+    }
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+        /* Start and end at original position */
+    }
+
+    10% {
+        transform: translateX(-10px);
+        /* Move left */
+    }
+
+    20% {
+        transform: translateX(10px);
+        /* Move right */
+    }
+
+    30% {
+        transform: translateX(-5px);
+        /* Move left again */
+    }
+
+    40% {
+        transform: translateX(5px);
+        /* Move right again */
+    }
+
+    50% {
+        transform: translateX(0);
+        /* Back to center */
+    }
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 15px #fff;
+        /* Initial glow */
+    }
+
+    100% {
+        text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 30px #fff, 0 0 20px #fff, 0 0 25px #fff;
+        /* Final glow */
+    }
+}
+
+.container {
+    width: 1218px;
+    /* background-color: #3e3e3f; */
+}
+
+.content {
+    background-color: #0d0d16;
+    color: aliceblue;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: rgb(223, 88, 247);
+    font-family: "Vast Shadow", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1:hover {
+    background-color: rgb(52, 51, 51);
+    padding: 7px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+h2 {
+    color: rgb(123, 237, 159);
+    font-family: "Vast Shadow", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2:hover {
+    background-color: rgb(136, 134, 134);
+    padding: 7px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+h3 {
+    color: rgb(233, 235, 145);
+    font-family: "Vast Shadow", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3:hover {
+    background-color: rgb(136, 134, 134);
+    padding: 7px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+h4 {
+    color: rgb(156, 231, 229);
+    font-family: "Vast Shadow", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h4:hover {
+    background-color: rgb(136, 134, 134);
+    padding: 7px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+h5 {
+    color: rgb(240, 168, 168);
+    font-family: "Vast Shadow", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h5:hover {
+    background-color: rgb(136, 134, 134);
+    padding: 7px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+h6 {
+    color: rgb(183, 184, 187);
+    font-family: "Vast Shadow", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h6:hover {
+    background-color: rgb(136, 134, 134);
+    padding: 7px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+strong {
+    font-family: "Bungee Tint", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+strong:hover {
+    background-color: yellowgreen;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+pre {
+    background-color: #282c34 !important;
+    color: #ffffff !important;
+    padding: 15px;
+    border-radius: 8px;
+    position: relative;
+    margin-bottom: 2rem;
+    /* max-height: 400px; */
+    overflow: auto;
+}
+
+pre:hover {
+    animation: shake 0.5s ease-in-out;
+}
+
+code {
+    font-size: 1rem;
+    /* Increase the size for better visibility */
+    line-height: 1.5;
+    white-space: pre-wrap;
+    /* Ensure long lines wrap */
+    word-wrap: break-word;
+    /* Handle long words properly */
+}
+
+/* Styles for inline code */
+code:not([class*="language-"]) {
+    background-color: #2c2c2c;
+    color: white;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.copy-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.copy-button i {
+    pointer-events: none;
+    /* Prevent clicking on the icon */
+}
+
+.copy-button:active {
+    transform: scale(0.9);
+}
+
+.copied::after {
+    content: "Copied!";
+    font-size: 0.9rem;
+    color: #28a745;
+    position: absolute;
+    right: 50px;
+    top: 10px;
+    opacity: 1;
+    animation: fadeout 1s forwards;
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

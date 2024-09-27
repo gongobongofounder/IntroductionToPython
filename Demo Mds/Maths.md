@@ -1,1 +1,1 @@
-# $$e^{i \pi}=-1$$ The most beautiful eqaution of Mathematics
+# $e^{i \pi}=-1$ is the most beautiful eqaution of mathematics.

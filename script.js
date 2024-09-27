@@ -10,6 +10,9 @@ async function getmd() {
     // Apply Prism.js syntax highlighting after rendering
     Prism.highlightAll();
 
+    // Render Equations
+    MathJax.typeset();
+
     // Add copy buttons to code blocks after rendering
     addCopyButtons();
 }

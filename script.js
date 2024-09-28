@@ -1,5 +1,5 @@
 // Paste the link of your mark down file here to render it into your site
-const myMarkDownFile="https://raw.githubusercontent.com/atrajit-sarkar/Embedding-Markdown/refs/heads/main/Demo%20Mds/css.md"
+const myMarkDownFile="https://raw.githubusercontent.com/Gongo-Bongo/01_Class_Mixture/refs/heads/main/01_Class.md"
 
 // Fetch the Markdown file and render it
 async function getmd() {

@@ -45,7 +45,7 @@ body {
 /* Media query for mobile view */
 @media (max-width: 768px) {
 
-    body{
+    body {
         width: fit-content;
     }
 
@@ -323,10 +323,10 @@ code:not([class*="language-"]) {
     font-size: 0.9rem;
     color: #28a745;
     position: absolute;
-    right: 50px;
-    top: 10px;
+    right: 40px;
+    top: 3px;
     opacity: 1;
-    animation: fadeout 1s forwards;
+    animation: fadeout 2.3s forwards;
 }
 
 @keyframes fadeout {
@@ -336,5 +336,86 @@ code:not([class*="language-"]) {
 
     100% {
         opacity: 0;
+    }
+}
+
+
+/* Media query for devices with a max-width of 768px */
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+        padding: 10px;
+        /* Add padding for smaller screens */
+        font-size: 16px;
+        /* Reduce font size for readability */
+        zoom: 1.2;
+        /* Increase zoom level for better visibility */
+    }
+
+    .title {
+        font-size: 28px;
+        /* Smaller font size for mobile */
+        height: auto;
+        /* Adjust height to be flexible */
+        padding: 10px 0;
+        /* Adjust padding for mobile */
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+        /* Make container responsive */
+    }
+
+    .content {
+        padding: 15px;
+        /* Reduce padding on mobile */
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 1.2rem;
+        /* Make headings smaller */
+        text-align: center;
+        /* Center align headings */
+    }
+
+    pre {
+        max-width: 100%;
+        /* Ensure code blocks don't overflow */
+        overflow-x: auto;
+        /* Allow horizontal scrolling if necessary */
+        font-size: 14px;
+        /* Smaller font size for code */
+    }
+
+    .copy-button {
+        top: 5px;
+        right: 5px;
+        font-size: 1rem;
+        /* Adjust size of copy button */
+    }
+}
+
+/* Media query for very small devices (up to 480px) */
+@media (max-width: 480px) {
+    body {
+        zoom: 1.4;
+        /* Increase zoom further for very small screens */
+    }
+
+    .title {
+        font-size: 24px;
+        padding: 8px 0;
+        /* Adjust for very small screens */
+    }
+
+    .content {
+        font-size: 14px;
+        /* Reduce font size in content */
     }
 }

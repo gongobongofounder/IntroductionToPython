@@ -12,6 +12,7 @@ body {
     font-family: "Kode Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 400;
+    font-size: 20px;
     font-style: normal;
     background-color: #1d1e1e;
     gap: 10px;
@@ -43,6 +44,10 @@ body {
 
 /* Media query for mobile view */
 @media (max-width: 768px) {
+
+    body{
+        width: fit-content;
+    }
 
     /* Adjust as needed for your breakpoint */
     .title {
